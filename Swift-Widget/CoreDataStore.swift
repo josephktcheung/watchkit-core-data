@@ -75,7 +75,7 @@ import CoreData
         // Create the coordinator and store
         var coordinator: NSPersistentStoreCoordinator? = NSPersistentStoreCoordinator(managedObjectModel: self.managedObjectModel)
         
-        let directory = NSFileManager.defaultManager().containerURLForSecurityApplicationGroupIdentifier("group.AnyTap.SwiftWidget");
+        let directory = NSFileManager.defaultManager().containerURLForSecurityApplicationGroupIdentifier("group.request.SwiftWidget");
         
         let url = directory?.URLByAppendingPathComponent("Swift_Widget.sqlite")
         var error: NSError? = nil
